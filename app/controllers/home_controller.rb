@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
   def index
-    render 'home/index'
+    @title = 'AWSクラス'
+  end
+
+  def about
   end
 end
