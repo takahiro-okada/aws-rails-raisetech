@@ -1,0 +1,29 @@
+.l-header{
+  background-color:gray;
+  height:60px
+}
+.l-header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 30px;
+  height: inherit;
+}
+.l-header__logo{
+  font-weight: bold;
+  font-size: 24px;
+  color:#fff;
+}
+.l-header__nav{
+}
+.l-header__list{
+  display: flex;
+  margin-right: -30px;
+}
+.l-header__link{
+  color:#fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .03em;
+  padding: 10px 30px;
+}

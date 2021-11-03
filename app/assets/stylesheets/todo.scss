@@ -1,0 +1,34 @@
+.todo__section{
+  margin-top: 30px;
+}
+.todo__container{
+}
+.todo__title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.todo__box{
+  flex: 1;
+  margin-top: 30px;
+}
+.todo__table{
+  margin-left: 30px;
+  width: calc(50% - 30px);
+}
+.todo__subtitle{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  &:not(:first-child){
+    margin-top: 30px;
+  }
+}
+.todo__button{
+  margin-top: 20px;
+}
+.tobo__input{
+  margin-top: 20px;
+}
+.todo__back{
+  margin-top: 20px;
+}
