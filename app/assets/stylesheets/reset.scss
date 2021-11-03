@@ -14,8 +14,10 @@ html {
 body {
   font-family: 'M PLUS 1p', sans-serif;
   margin: 0;
-  height: 100%;
-  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  background-image: image-url('background.png');
 }
 main {
   display: block;

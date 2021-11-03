@@ -6,11 +6,13 @@ table{
   border-spacing: 0;
   width: 100%;
 }
+table th, table td {
+  border: solid 1px rgb(164, 164, 164);
+}
 table th{
   background: #d4f0fd;
 }
 table tr{
-  border-bottom: solid 1px #eee;
   cursor: pointer;
 }
 
