@@ -26,7 +26,7 @@
             <% end%>
           </td>
           <td>
-            <%= link_to(edit_todo_path(todo)) do %>
+            <%= link_to(todo_path(todo), method: :delete) do %>
             <i class="far fa-trash-alt"></i>
             <% end%>
           </td>
