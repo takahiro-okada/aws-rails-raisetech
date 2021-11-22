@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Todo.create({title:'新しいTODO', content:"やることはたくさんありますよ！"})
+Todo.create({title:'新しいTODO2', content:"やることはたくさんありますよ2！"})
+Todo.create({title:'新しいTODO3', content:"やることはたくさんありますよ3！"})

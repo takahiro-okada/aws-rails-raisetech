@@ -1,0 +1,21 @@
+<div class="index__heading">
+  <h1 class="c-title">TODOを追加する</h1>
+</div>
+<div class="todo__container">
+  <div class="todo__box">
+    <%= form_for(@todo) do |f| %>
+      <div class="tobo__input">
+        <%= f.label :title, "TODO", class:"todo__subtitle" %>
+        <%= f.text_field :title, class:"c-input" %>
+      </div>
+      <div class="tobo__input">
+        <%= f.label :content, "内容" , class:"todo__subtitle" %>
+        <%= f.text_area :content, class:"c-textarea" %>
+      </div>
+      <div class="todo__button"><%= f.submit "追加する",class:"c-button" %></div>
+    <% end %>
+  </div>
+  <div class="todo__back">
+    <%= link_to '戻る', todos_path, class:"c-link" %>
+  </div>
+</div>

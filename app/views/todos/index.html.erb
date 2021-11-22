@@ -1,0 +1,40 @@
+<div class="index__section">
+  <div class="index__heading">
+    <h1 class="c-title">TODO一覧</h1>
+    <div class="index__heading-button">
+      <%= link_to 'TODOを追加する', new_todo_path,class:"c-button" %>
+    </div>
+  </div>
+  <div class="index__container">
+    <table class="index__table todo-table">
+      <thead>
+        <tr>
+          <th>やること</th>
+          <th>内容</th>
+          <th>編集する</th>
+          <th>削除する</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @todos.each do |todo| %>
+        <tr>
+          <td><%= todo.title %></td>
+          <td><%= todo.content %></td>
+          <td>
+            <%= link_to(edit_todo_path(todo)) do %>
+            <i class="fas fa-edit"></i>
+            <% end%>
+          </td>
+          <td>
+            <%= link_to(todo_path(todo), method: :delete) do %>
+            <i class="far fa-trash-alt"></i>
+            <% end%>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
